@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FormGroup from 'react-bootstrap/lib/FormGroup';
-import ControlLabel from 'react-bootstrap/lib/ControlLabel';
-import FormControl from 'react-bootstrap/lib/FormControl';
+import FormGroup from 'react-bootstrap/FormGroup';
+import ControlLabel from 'react-bootstrap/ControlLabel';
+import FormControl from 'react-bootstrap/FormControl';
 
 let marked = require("marked");
 
