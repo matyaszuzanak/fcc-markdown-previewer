@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import FormGroup from 'react-bootstrap/FormGroup';
-import FormControl from 'react-bootstrap/FormControl';
+import './App.css';
+import Form from 'react-bootstrap/Form'
 
 let marked = require("marked");
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         <div>
-          <FormGroup controlId="formControlsTextarea">
-            <div>Markdown Input</div>
-            <FormControl componentClass="textarea" placeholder="Enter< Markdown"></FormControl>
-          </FormGroup>
+          <Form.Group controlId="formControlsTextarea">
+            <Form.Label>Markdown Input</Form.Label>
+            <Form.Control componentClass="textarea" placeholder="Enter Markdown"></Form.Control>
+          </Form.Group>
         </div>
       </div>
     );
