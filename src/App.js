@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import FormGroup from 'react-bootstrap/FormGroup';
-import ControlLabel from 'react-bootstrap/ControlLabel';
 import FormControl from 'react-bootstrap/FormControl';
 
 let marked = require("marked");
@@ -11,7 +10,7 @@ class App extends Component {
       <div className="App">
         <div>
           <FormGroup controlId="formControlsTextarea">
-            <ControlLabel>Markdown Input</ControlLabel>
+            <div>Markdown Input</div>
             <FormControl componentClass="textarea" placeholder="Enter< Markdown"></FormControl>
           </FormGroup>
         </div>
