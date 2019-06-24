@@ -19,9 +19,9 @@ const initialMarkdown = `
 
 ### Links
 
-[FreeCodeCamp](https://learn.freecodecamp.org)
+[FreeCodeCamp](https://www.freecodecamp.org)
 
-[Google](https://www.google.com "World's most popular search engine")
+[MyGithubAccount](https://github.com/matyaszuzanak "My Github Account")
 
 ### Text Decorations
 
@@ -37,7 +37,7 @@ const initialMarkdown = `
 
 ### Blockquote
 
-> "Whether you think you can or you can't, either way you are right." --Henry Ford
+> "Whether you think you can or you can't, either way you are right." -- Henry Ford
 
 ## Code
 
