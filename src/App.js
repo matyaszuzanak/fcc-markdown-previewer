@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from 'react-bootstrap/Form'
+import marked from 'marked';
+
+const initialMarkdown = `
+### Headers
+
+# Header 1
+## Header 2
+### Header 3
+`
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      markdown: initialMarkdown
+    }
+  }
+
   render() {
     return (
       <div>
@@ -12,7 +28,7 @@ class App extends Component {
             <textarea id="editor" />
           </div>
           <div className="right">
-            <div id="preview" />
+            <div id="preview">{marked(this.state.markdown)}</div>
           </div>
         </div>
       </div>
