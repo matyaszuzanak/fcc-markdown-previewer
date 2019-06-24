@@ -52,6 +52,17 @@ function multiplyByTwo(a) {
 \`\`\`
 `
 
+var renderer = new marked.Renderer()
+
+renderer.link = function(href, title, text) {
+  return `<a href${href} target="_blank">${text}</a>`
+}
+
+marked.setOptions({
+  renderer,
+  breaks: true
+})
+
 class App extends Component {
   constructor(props) {
     super(props)
