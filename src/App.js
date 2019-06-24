@@ -86,6 +86,8 @@ class App extends Component {
             <div id="preview" dangerouslySetInnerHTML={{ __html: marked(this.state.markdown) }} />
           </div>
         </div>
+        <button id="clear" onClick={() => this.setState({markdown: ""})}>Clear Textarea</button>
+        <button id="clear" onClick={() => this.setState({markdown: initialMarkdown})}>Initial Textarea</button>
       </div>
     )
   }
