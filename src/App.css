@@ -1,8 +1,3 @@
-.App {
-  text-align: center;
-  margin-top: 50px;
-}
-
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -10,12 +5,12 @@
 
 .left {
   width: 95%;
-  height: 85vh;
+  height: 90vh;
 }
 
 .right {
   width: 95%;
-  height: 85vh;
+  height: 90vh;
   border: 1px solid;
 }
 
