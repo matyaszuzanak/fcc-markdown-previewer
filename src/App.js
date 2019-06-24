@@ -28,7 +28,7 @@ class App extends Component {
             <textarea id="editor" />
           </div>
           <div className="right">
-            <div id="preview">{marked(this.state.markdown)}</div>
+            <div id="preview" dangerouslySetInnerHTML={{__html: marked(this.state.markdown)}} />
           </div>
         </div>
       </div>
