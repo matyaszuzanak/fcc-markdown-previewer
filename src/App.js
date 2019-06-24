@@ -54,8 +54,8 @@ function multiplyByTwo(a) {
 
 var renderer = new marked.Renderer()
 
-renderer.link = function(href, title, text) {
-  return `<a href${href} target="_blank">${text}</a>`
+renderer.link = function (href, title, text) {
+  return `<a href=${href} target="_blank">${text}</a>`
 }
 
 marked.setOptions({
@@ -80,10 +80,10 @@ class App extends Component {
         <h1 id="top-header">Markdown Previewer</h1>
         <div className="box">
           <div className="left">
-            <textarea id="editor" value={this.state.markdown} onChange={this.handleChange}/>
+            <textarea id="editor" value={this.state.markdown} onChange={this.handleChange} />
           </div>
           <div className="right">
-            <div id="preview" dangerouslySetInnerHTML={{__html: marked(this.state.markdown)}} />
+            <div id="preview" dangerouslySetInnerHTML={{ __html: marked(this.state.markdown) }} />
           </div>
         </div>
       </div>
